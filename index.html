@@ -1,0 +1,24 @@
+---
+layout: default
+svg: true
+home: true
+---
+
+<div id="count">
+	<a href="/">
+		<img class="ಠ_ಠ" src="../img/assets/logo.png" alt="Hearthstone Swirl">
+	</a>
+</div>
+
+<div id="data" class="container">
+	<h1>Generate random Hearthstone challenges to play with your friends.</h1>
+	<ul class="challenges">
+		{% for list in site.data.challenges %}
+		<li id="{{ forloop.index }}">{{ list.challenge }}</li>
+		{% endfor %}
+	</ul>
+</div>
+
+<a id="refresh" class="button push">
+	<svg class="icon icon-loop2"><use xlink:href="#icon-loop2"></use></svg> New challenge
+</a>

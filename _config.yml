@@ -1,0 +1,17 @@
+# Site settings
+title: Hearthstone Party
+description: Generate random Hearthstone challenges to play with your friends.
+baseurl: ""
+url: "http://hearthstone.party"
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Build settings
+markdown: kramdown
+include: ['_pages']
+
+# Time zone
+timezone: Europe/London

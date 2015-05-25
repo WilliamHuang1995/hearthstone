@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #Typography
+\*------------------------------------*/
+
+/* @font-face {
+	font-family: 'Belwe';
+	src: url("../fonts/Belwe_en.ttf");
+} */
+
+h1 {
+	font: 400 1.4em/1.2 $primary;
+	color: #FFF;
+	margin: 0;
+}
+
+li {
+	@extend h1;
+}
+
+p {
+	font: 400 0.9em/1.8 $primary;
+}
+
+a {
+	color: #FFF;
+	font: 400 1em $primary;
+	text-decoration: none;
+}

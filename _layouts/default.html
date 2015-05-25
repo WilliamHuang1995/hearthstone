@@ -1,0 +1,45 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<!-- Background by Raymond Swanland. -->
+<html lang="en" prefix="og: http://ogp.me/ns#">
+ {% include head.html %}
+<body>
+
+<div id="bg"></div>
+
+{% if page.list %}
+<svg display=none width=0 height=0>
+	<defs>
+		<symbol id="icon-shield" viewBox="0 0 1024 1024">
+			<path class="path1" d="M960 0l-448 128-448-128c0 0-4.5 51.698 0 128l448 140.090 448-140.090c4.498-76.302 0-128 0-128zM72.19 195.106c23.986 250.696 113.49 672.234 439.81 828.894 326.32-156.66 415.824-578.198 439.81-828.894l-439.81 165.358-439.81-165.358z"></path>
+		</symbol>
+	</defs>
+</svg>
+{% endif %}
+
+{% if page.svg %}
+<svg display=none width=0 height=0>
+	<defs>
+		<symbol id="icon-loop2" viewBox="0 0 1024 1024">
+			<path class="path1" d="M889.68 166.32c-93.608-102.216-228.154-166.32-377.68-166.32-282.77 0-512 229.23-512 512h96c0-229.75 186.25-416 416-416 123.020 0 233.542 53.418 309.696 138.306l-149.696 149.694h352v-352l-134.32 134.32z"></path>
+			<path class="path2" d="M928 512c0 229.75-186.25 416-416 416-123.020 0-233.542-53.418-309.694-138.306l149.694-149.694h-352v352l134.32-134.32c93.608 102.216 228.154 166.32 377.68 166.32 282.77 0 512-229.23 512-512h-96z"></path>
+		</symbol>
+	</defs>
+</svg>
+{% endif %}
+
+{% include nav.html %}
+
+<div class="┬──┬">
+	<div class="vertical">
+		{{ content }}
+	</div>
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>

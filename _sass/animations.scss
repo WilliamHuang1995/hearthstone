@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #Animations
+\*------------------------------------*/
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.fadeIn {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.active li {
+	opacity: 1;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+
+@for $i from 1 through 3 {
+	li:nth-of-type(#{$i}) {
+		transition-delay: (0.3s - ( 0.1 * $i));
+		-webkit-transition-delay: (0.3s - ( 0.1 * $i));
+	}
+}
+
+
+
+
+
