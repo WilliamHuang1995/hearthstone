@@ -73,7 +73,7 @@ challenge
 "Build a deck and announce your class. Your opponent may ban any two cards from being used in the following match, and you can not replace them (if you have them).",
 "Build two decks together. Make sure you have the cards to play them, and flip a coin to decide the player of each deck.",
 "Pick 10 cards for your deck. The inkeeper will fill the rest.",
-"You must kill the enemy hero with your own hero. I'd recommend a melee class.",
+"You must kill the enemy hero with your own hero. I'd recommend a weapon class.",
 "15 seconds per turn. May require an additional player as a judge.",
 "Team up and do a complete arena run together.",
 "Build your decks around Windfury combos.",
@@ -83,8 +83,9 @@ challenge
 "Both play Priest. If you have two mana or more, you must heal the enemy hero.",
 "Muligan for Lorewalker Cho, and play a full match with the card in play. You may not kill, silence or taunt Cho. Healing and health buffs are permitted.",
 "Every card must have a hat or other head accessory.",
-"Any deck. Any class. You can only use the top 15 cards in your deck.",
+"Any deck. Any class. You can only use the top 15 cards you draw.",
 "Buy a pack each, and build a deck with your new cards. If you open several different class cards, use a similar card for the hero you chose.",
 "Your opponent must die to Elven Archer. Any class.",
 "End the game on your opponent's turn. You lose if it ends on your turn, unless it's a draw.",
-"Build a popular deck, but find a rough replacement for every card."
+"Build a popular deck, but find a rough replacement for every card.",
+"Pick your most played deck, and make a new deck with the same hero. You can not use any cards from the previous deck."

@@ -119,6 +119,10 @@ footer {
 	padding-bottom: 14px;
 }
 
+#message {
+	@include animate(0.3s ease-out);
+}
+
 
 
 
@@ -239,25 +243,18 @@ svg {
 		}
 
 		&:hover {
-			opacity: 0.5;
+			opacity: 0.75;
 		}
 
-		.challenge, .icon {
+		.challenge, .number {
 			float: left;
 		}
 
-		.icon {
+		.number {
 			width: 10%;
-			position: relative;
-
-			span {
-				opacity: 0.5;
-				font-size: 0.5em;
-				position: absolute;
-				top: -10px;
-				left: -10px;
-				border-bottom: 1px solid $light;
-			}
+			font-size: 1em;
+			opacity: 0.5;
+			top: -10px;
 		}
 
 		img {

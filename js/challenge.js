@@ -20,7 +20,7 @@ if (window.location.hash) {
 	$('.container').css('height', ha);
 }
 
-// Randomw without repeat
+// Random without repeat
 var hChallenge = noR(challenges);
 function noR(array) {
 	var copy = array.slice(0);
@@ -47,9 +47,6 @@ function hAnimate () {
 
 // When button is clicked, do this
 function refresh() {
-	// Keep track of how many tips
-	calls++;
-
 	// If the greeting is present, hide it
 	if ($('h1').length) {
 		$('h1').addClass('hidden');
@@ -76,6 +73,28 @@ function refresh() {
 
 	// Update the challenge-counter
 	$('#count').html((challenges.indexOf(random) + 1) + '/' + total);
+
+	// Keep track of how many challenges, and display messages
+	calls++;
+	var original = 'HINT: Press spacebar for a new challenge.';
+	var message = $('#message');
+	var hey = 'active-page';
+
+	if (calls >= total) {
+		message.html('You have seen all the challenges now!').addClass(hey);
+	} if (calls >= (total + 4)) {
+		message.html(original).removeClass(hey);
+	} if (calls >= (total * 1.5)) {
+		message.html("If you're looking for a particular challenge, check the list view!").addClass(hey);
+	} if (calls >= (total * 1.5) + 4) {
+		message.html(original).removeClass(hey);
+	} if (calls >= (total * 2)) {
+		message.html('You have seen all the challenges twice now!').addClass(hey);
+	} if (calls >= (total * 2) + 4) {
+		message.html(original).removeClass(hey);
+	} if (calls >= (total * 2.5)) {
+		message.html('You should probably suggest your own challenge!').addClass(hey);
+	}
 }
 
 // On click or tap

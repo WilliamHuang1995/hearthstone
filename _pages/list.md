@@ -16,9 +16,8 @@ list: true
 		{% for list in site.data.challenges %}
 			<li>
 				<a href="/#{{ forloop.index }}">
-					<span class="icon">
-						<span>{{ forloop.index }}</span>
-						<img src="../img/assets/logo.png" alt="Hearthstone Swirl">
+					<span class="number">
+						{{ forloop.index }}
 					</span>
 					<span class="challenge">
 						{{ list.challenge }}

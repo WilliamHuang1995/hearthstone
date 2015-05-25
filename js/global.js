@@ -8,7 +8,7 @@ $(function() {
 
 // 
 jQuery(window).load(function () {
-	if ((Date.now() - timerStart) > 500) {
+	if ((Date.now() - timerStart) > 400) {
 		$('#bg').addClass('fadeIn');
 	} else {
 		$('#bg').css('opacity', 1);
