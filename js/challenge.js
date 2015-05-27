@@ -45,7 +45,7 @@ function hAnimate () {
 	$('.container').css('height', ha + 32);
 }
 
-// When button is clicked, do this
+// Generate new challenge
 function refresh() {
 	// If the greeting is present, hide it
 	if ($('h1').length) {
@@ -61,13 +61,13 @@ function refresh() {
 	// Find challenge-number in array
 	var display = challenges.indexOf(random);
 
-	// Show <li> element with the challenge
+	// Show <li> element with the challenge in question
 	$('#data li').eq(display).addClass('show');
 
 	// Get height of new element and apply that height to the container to animate it
 	hAnimate();
 
-	// Define a new direct link and replace it without affecting the BACK button
+	// Define a new direct link and replace it without affecting the back-button
 	var link = baseURL + '#' + $('.show').attr('id');
 	location.replace(link);
 
@@ -93,7 +93,7 @@ function refresh() {
 	} if (calls >= (total * 2) + 4) {
 		message.html(original).removeClass(hey);
 	} if (calls >= (total * 2.5)) {
-		message.html('You should probably suggest your own challenge!').addClass(hey);
+		message.html('Feel free to suggest more challenges!').addClass(hey);
 	}
 }
 
@@ -111,9 +111,11 @@ $(document).keydown(function(e) {
 		$('#refresh').addClass('press');
 	}
 });
+
 $(document).keyup(function(e) { 
   keyAllowed [e.which] = true;
 });
+
 $(document).focus(function(e) { 
   keyAllowed = {};
 });

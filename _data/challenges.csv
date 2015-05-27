@@ -88,4 +88,6 @@ challenge
 "Your opponent must die to Elven Archer. Any class.",
 "End the game on your opponent's turn. You lose if it ends on your turn, unless it's a draw.",
 "Build a popular deck, but find a rough replacement for every card.",
-"Pick your most played deck, and make a new deck with the same hero. You can not use any cards from the previous deck."
+"Pick your most played deck, and make a new deck with the same hero. You can not use any cards from the previous deck.",
+"Play as a Hunter. You can only deal damage to the enemy hero through your hero power or fatigue damage.",
+"You can not deal more than one damage to the enemy hero per turn."
