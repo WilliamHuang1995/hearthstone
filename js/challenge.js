@@ -128,6 +128,7 @@ $('body').keyup(function(e){
 	}
 });
 
+// Resize height  of container on resize (mostly for device rotation)
 $(window).on('resize', function(){
 	var url = location.hash;
 	if (url.substring(1) - 1 < total) {
