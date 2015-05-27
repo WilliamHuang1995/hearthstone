@@ -45,6 +45,11 @@ function hAnimate () {
 	$('.container').css('height', ha + 32);
 }
 
+// Secondary fire to fix potential incorrect height
+$(function () {
+	setTimeout(hAnimate, 100);
+});
+
 // Generate new challenge
 function refresh() {
 	// If the greeting is present, hide it
