@@ -24,6 +24,11 @@ $dark: #28282d;
 @import 'typography';
 
 
+/* Special characters */
+/* ಠ‿ಠ - flex */
+/* ಠ︵ಠ - footer */
+
+
 
 
 
@@ -92,17 +97,25 @@ ul, li {
 	}
 }
 
-.┬──┬ {
-	display: table;
+.ಠ‿ಠ {
 	height: 100%;
-	margin: 0 auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	        align-items: center;
 	max-width: 90%;
 	width: 100%;
+	margin: 0 auto;
 }
 
 .vertical {
-	display: table-cell;
-	vertical-align: middle;
+	display: block;
+	width: 100%;
 }
 
 footer {
@@ -423,7 +436,7 @@ nav {
 /* Adjusted for width */
 
 @media only screen and (min-width: 520px) {
-	.┬──┬ {
+	.ಠ‿ಠ {
 		max-width: 80%;
 	}
 
@@ -450,7 +463,7 @@ nav {
 }
 
 @media only screen and (min-width: 719px) {
-	.┬──┬ {
+	.ಠ‿ಠ {
 		max-width: 640px;
 	}
 
@@ -465,7 +478,7 @@ nav {
 }
 
 @media only screen and (min-width: 1300px) {
-	.┬──┬ {
+	.ಠ‿ಠ {
 		max-width: 720px;
 	}
 
@@ -496,7 +509,7 @@ nav {
 }
 
 @media only screen and (min-width: 1500px) {
-	.┬──┬ {
+	.ಠ‿ಠ {
 		max-width: 900px;
 	}
 
