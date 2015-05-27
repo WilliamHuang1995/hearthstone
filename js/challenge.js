@@ -75,12 +75,12 @@ function refresh() {
 	// Show <li> element with the challenge in question
 	$('#data li').eq(display).addClass('show');
 
-	// Get height of new element and apply that height to the container to animate it
-	hAnimate();
-
 	// Define a new direct link and replace it without affecting the back-button
 	var link = baseURL + '#' + $('.show').attr('id');
 	location.replace(link);
+
+	// Get height of new element and apply that height to the container to animate it
+	hAnimate();
 
 	// Update the challenge-counter
 	$('#count').html((challenges.indexOf(random) + 1) + '/' + total);
