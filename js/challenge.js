@@ -3,21 +3,33 @@ challenges = $('#data li').map(function(i, el) {
 	return $(el).text();
 }).get();
 
+// Global variables
 var total = challenges.length;
+var url = location.hash;
+
+// Animate height
+function hAnimate () {
+	if (window.location.hash) {
+		if (url.substring(1) - 1 < total) {
+			var ha = $('.show').outerHeight();
+		}
+	}
+	else {
+		var ha = $('h1').outerHeight();
+	}
+	$('.container').css('height', ha + 32);
+}
 
 // Once loaded
 if (window.location.hash) {
-	var url = location.hash;
 	if (url.substring(1) - 1 < total) {
 		$('#count').html(url.substring(1) + '/' + total);
 		$(url).addClass('show');
 		$('h1').addClass('hidden');
-		var ha = $(url).outerHeight();
-		$('.container').css('height', ha + 32);
+		hAnimate();
 	}
 } else {
-	var ha = $('h1').outerHeight();
-	$('.container').css('height', ha + 32);
+	hAnimate();
 }
 
 // Random without repeat
@@ -38,12 +50,6 @@ var calls = 0;
 
 // To replace URL instead of updating it
 var baseURL = '//' + location.host + location.pathname;
-
-// Animate height
-function hAnimate () {
-	var ha = $('.show').outerHeight();
-	$('.container').css('height', ha + 32);
-}
 
 // Secondary fire to fix potential incorrect height
 $(function () {
@@ -135,15 +141,8 @@ $('body').keyup(function(e){
 
 // Resize height  of container on resize (mostly for device rotation)
 $(window).on('resize', function(){
-	var url = location.hash;
-	if (url.substring(1) - 1 < total) {
-		hAnimate();
-	} else {
-		var ha = $('h1').outerHeight();
-		$('.container').css('height', ha + 32);
-	}
+	hAnimate();
 });
-
 
 
 
