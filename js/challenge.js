@@ -127,3 +127,12 @@ $('body').keyup(function(e){
 		refresh();
 	}
 });
+
+$(window).on('resize', function(){
+	if ($('h1').length) {
+		var ha = $('h1').outerHeight();
+	} else {
+		var ha = $('.show').outerHeight();
+	}
+	$('.container').css('height', ha + 32);
+});
