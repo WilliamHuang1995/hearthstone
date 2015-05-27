@@ -16,8 +16,8 @@ if (window.location.hash) {
 		$('.container').css('height', ha + 32);
 	}
 } else {
-	var ha = $('#data').outerHeight();
-	$('.container').css('height', ha);
+	var ha = $('h1').outerHeight();
+	$('.container').css('height', ha + 32);
 }
 
 // Random without repeat
@@ -129,10 +129,16 @@ $('body').keyup(function(e){
 });
 
 $(window).on('resize', function(){
-	if ($('h1').length) {
-		var ha = $('h1').outerHeight();
+	var url = location.hash;
+	if (url.substring(1) - 1 < total) {
+		hAnimate();
 	} else {
-		var ha = $('.show').outerHeight();
+		var ha = $('h1').outerHeight();
+		$('.container').css('height', ha + 32);
 	}
-	$('.container').css('height', ha + 32);
 });
+
+
+
+
+
