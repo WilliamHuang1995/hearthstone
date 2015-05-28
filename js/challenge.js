@@ -45,16 +45,16 @@ function noR(array) {
 	};
 }
 
+// Secondary fire to avoid initial height bug
+$(function () {
+	setTimeout(hAnimate, 100);
+});
+
 // To display a message after X tips
 var calls = 0;
 
 // To replace URL instead of updating it
 var baseURL = '//' + location.host + location.pathname;
-
-// Secondary fire to fix potential incorrect height
-$(function () {
-	setTimeout(hAnimate, 100);
-});
 
 // Generate new challenge
 function refresh() {
@@ -79,11 +79,14 @@ function refresh() {
 	var link = baseURL + '#' + $('.show').attr('id');
 	location.replace(link);
 
-	// Get height of new element and apply that height to the container to animate it
-	hAnimate();
-
 	// Update the challenge-counter
 	$('#count').html((challenges.indexOf(random) + 1) + '/' + total);
+
+	// Fire once
+	hAnimate();
+
+	// Fire the animation with a delay to avoid Opera Coast bug
+	setTimeout(hAnimate, 50);
 
 	// Keep track of how many challenges, and display messages
 	calls++;
@@ -143,7 +146,6 @@ $('body').keyup(function(e){
 $(window).on('resize', function(){
 	hAnimate();
 });
-
 
 
 

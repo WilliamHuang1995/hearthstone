@@ -123,8 +123,14 @@ footer {
 }
 
 .ಠ︵ಠ {
-	position: relative;
-	padding-bottom: 14px;
+	.relative {
+		height: auto;
+	}
+
+	footer {
+		position: relative;
+		padding-bottom: 14px;
+	}
 }
 
 #message {
