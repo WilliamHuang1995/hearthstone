@@ -32,6 +32,7 @@ challenge
 "You pick 15 cards for your opponent.",
 "Play with the default decks. Any class.",
 "First one to kill their own hero wins.",
+"Your cards must cost three or more.",
 "Your cards must cost four or more.",
 "Only even cost cards: 0, 2, 4, 6, 8, 10 and 20.",
 "Only odd cost cards: 1, 3, 5, 7, 9.",
@@ -87,7 +88,11 @@ challenge
 "Buy a pack each, and build a deck with your new cards. If you open several different class cards, use a similar card for the hero you chose.",
 "Your opponent must die to Elven Archer. Any class.",
 "End the game on your opponent's turn. You lose if it ends on your turn, unless it's a draw.",
+"You must include 10 cards from three expansions of your choosing, vanilla included.",
+"Your deck must include 15 female and 15 male cards.",
 "Build a popular deck, but find a rough replacement for every card.",
 "Pick your most played deck, and make a new deck with the same hero. You can not use any cards from the previous deck.",
 "Play as a Hunter. You can only deal damage to the enemy hero through your hero power or fatigue damage.",
-"You can not deal more than one damage to the enemy hero per turn."
+"Include 15 legendary cards in your deck, or 10 if you don't have enough.",
+"You can not deal more than one damage to the enemy hero per turn.",
+"Only include one copy of each non-legendary card. No legendary cards allowed."

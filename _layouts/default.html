@@ -33,11 +33,17 @@ layout: compress
 
 {% include nav.html %}
 
-<div class="ಠ‿ಠ">
-	<div class="vertical">
+{% if page.list %}
+<div class="relative">
+	{{ content }}
+</div>
+{% else %}
+<div class="relative">
+	<div class="ﾟヮﾟ">
 		{{ content }}
 	</div>
 </div>
+{% endif %}
 
 {% include footer.html %}
 
