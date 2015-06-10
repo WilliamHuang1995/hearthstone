@@ -19,6 +19,7 @@
 	animation-fill-mode: both;
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
+	opacity: 1; /* For IE9 */
 }
 
 .active li {
