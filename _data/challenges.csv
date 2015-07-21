@@ -95,4 +95,6 @@ challenge
 "Play as a Hunter. You can only deal damage to the enemy hero through your hero power or fatigue damage.",
 "Include 15 legendary cards in your deck, or 10 if you don't have enough.",
 "You can not deal more than one damage to the enemy hero per turn.",
-"Only include one copy of each non-legendary card. No legendary cards allowed."
+"Only include one copy of each non-legendary card. No legendary cards allowed.",
+"For every minion in your deck, you must include a spell of equal cost and vice versa.",
+"First player to drop down to 15 health then back up to 30 wins."
