@@ -142,7 +142,7 @@ $('body').keyup(function(e){
 	}
 });
 
-// Resize height  of container on resize (mostly for device rotation)
+// Resize height  of container on resize (mainly for device rotation)
 $(window).on('resize', function(){
 	hAnimate();
 });
