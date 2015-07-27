@@ -97,4 +97,8 @@ challenge
 "You can not deal more than one damage to the enemy hero per turn.",
 "Only include one copy of each non-legendary card. No legendary cards allowed.",
 "For every minion in your deck, you must include a spell of equal cost and vice versa.",
-"First player to drop down to 15 health then back up to 30 wins."
+"First player to drop down to 15 health then back up to 30 wins.",
+"No cards from the last two card expansions allowed.",
+"No cards from the last two expansions allowed (solo adventures and card only expansions).",
+"You can not directly target the enemy hero. Damage may come from any untargetable effect; like fatigue damage, Knife Juggler, etc.",
+"Prevent your opponent from dying. You gain one point for each turn they live. Play two games and swap roles; player with the most points wins."
